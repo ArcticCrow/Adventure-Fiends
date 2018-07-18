@@ -31,7 +31,7 @@ public class PlayerController : NetworkBehaviour {
 	public override void OnStartLocalPlayer ()
 	{
 		GetComponentInChildren<MeshRenderer>().material = localPlayerMat;
-		main.GetComponent<PlayerCamera>().startTracking(transform);
+		main.GetComponent<PlayerCamera>().StartTracking(transform);
 	}
 	
 	// Update is called once per frame
